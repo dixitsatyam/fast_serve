@@ -4,8 +4,6 @@
 #include "../tcpserver.h"
 #include <string>
 #include <sys/epoll.h>
-// #include <openssl/ssl.h>
-// #include <openssl/err.h>
 #include "../ctpl_stl.h"
 #include <unordered_map>
 
@@ -57,11 +55,7 @@ private:
     size_t parseHeaders(int client_socket, const string& data);
     void   parseRequestLine(int client_socket, const std::string& request_line);
 
-    //openssl functions : 
-    // void init_openssl();
-    // void cleanup_openssl();
-    // SSL_CTX* create_ssl_context();
-    // void configure_context();
+   
 
 };
 
